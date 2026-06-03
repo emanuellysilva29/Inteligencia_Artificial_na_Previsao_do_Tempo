@@ -1,0 +1,263 @@
+/* Configurações Gerais e Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root {
+    --verde-agro: #2e7d32;
+    --verde-claro: #4caf50;
+    --azul-tecnologico: #1565c0;
+    --escuro: #212121;
+    --cinza-claro: #f5f5f5;
+    --branco: #ffffff;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color: var(--escuro);
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 0;
+}
+
+.max-w-md {
+    max-width: 700px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.hidden {
+    display: none !important;
+}
+
+/* Cabeçalho e Menu */
+header {
+    background-color: var(--branco);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .container {
+    padding: 20px 0;
+}
+
+.menu-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--verde-agro);
+}
+
+.logo span {
+    color: var(--azul-tecnologico);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--escuro);
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: var(--verde-agro);
+}
+
+/* Seção Hero (Destaque inicial) */
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1592982537447-7440770cbfc9?auto=format&fit=crop&w=1400&q=80') no-repeat center center/cover;
+    color: var(--branco);
+    height: 70vh;
+    display: flex;
+    align-items: center;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+    font-weight: 300;
+}
+
+.btn-principal {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: var(--verde-claro);
+    color: var(--branco);
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.btn-principal:hover {
+    background-color: var(--verde-agro);
+}
+
+/* Estrutura de Seções */
+.secao-branca { background-color: var(--branco); }
+.secao-cinza { background-color: var(--cinza-claro); }
+
+h2 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 10px;
+    color: var(--verde-agro);
+}
+
+.subtitulo {
+    text-align: center;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+/* Grids e Cards */
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 40px;
+}
+
+.card {
+    background: var(--cinza-claro);
+    padding: 30px;
+    border-radius: 8px;
+    border-top: 5px solid var(--azul-tecnologico);
+}
+
+.card h3 {
+    margin-bottom: 15px;
+    color: var(--escuro);
+}
+
+.beneficio-item {
+    background: var(--branco);
+    padding: 25px;
+    border-left: 5px solid var(--verde-claro);
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.beneficio-item h4 {
+    font-size: 20px;
+    color: var(--verde-agro);
+    margin-bottom: 10px;
+}
+
+/* Simulador Interativo */
+.formulario-ia {
+    background: var(--cinza-claro);
+    padding: 30px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.campo {
+    margin-bottom: 20px;
+}
+
+.campo label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.campo select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.btn-ia {
+    width: 100%;
+    padding: 14px;
+    background-color: var(--azul-tecnologico);
+    color: var(--branco);
+    border: none;
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn-ia:hover {
+    background-color: #0d47a1;
+}
+
+.resultado {
+    margin-top: 30px;
+    padding: 25px;
+    background-color: #e3f2fd;
+    border-radius: 8px;
+    border: 1px solid #bbdefb;
+}
+
+.resultado h3 {
+    color: var(--azul-tecnologico);
+    margin-bottom: 10px;
+}
+
+/* Rodapé */
+footer {
+    background-color: var(--escuro);
+    color: #999;
+}
+footer .container {
+    padding: 30px 0;
+}
+
+/* Responsividade Mobile */
+@media (max-width: 768px) {
+    .menu-flex {
+        flex-direction: column;
+        gap: 15px;
+    }
+    nav ul li {
+        margin: 0 10px;
+    }
+    .hero h1 {
+        font-size: 32px;
+    }
+}
