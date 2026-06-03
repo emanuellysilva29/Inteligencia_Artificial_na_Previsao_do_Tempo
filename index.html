@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agrinho 2026 - IA na Previsão do Tempo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container menu-flex">
+            <div class="logo">Agrinho <span>2026</span></div>
+            <nav>
+                <ul>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#como-funciona">Como Funciona</a></li>
+                    <li><a href="#beneficios">Benefícios</a></li>
+                    <li><a href="#simulador">Simulador IA</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="inicio" class="hero">
+        <div class="container text-center">
+            <h1>Inteligência Artificial na Previsão do Tempo</h1>
+            <p>Cultivando o futuro da agricultura com precisão climática e inovação tecnológica.</p>
+            <a href="#simulador" class="btn-principal">Testar Simulador</a>
+        </div>
+    </section>
+
+    <section id="como-funciona" class="secao-branca">
+        <div class="container">
+            <h2>Como a IA Transforma o Clima?</h2>
+            <p class="subtitulo">A fusão entre dados meteorológicos tradicionais e machine learning de alta performance.</p>
+            
+            <div class="grid-3">
+                <div class="card">
+                    <h3>1. Coleta de Dados</h3>
+                    <p>Satélites, sensores no solo e estações meteorológicas enviam bilhões de dados em tempo real sobre umidade, vento e temperatura.</p>
+                </div>
+                <div class="card">
+                    <h3>2. Processamento</h3>
+                    <p>Algoritmos de Inteligência Artificial analisam padrões históricos complexos que passariam despercebidos por sistemas comuns.</p>
+                </div>
+                <div class="card">
+                    <h3>3. Alerta Antecipado</h3>
+                    <p>Modelos preditivos geram previsões hiperlocais, permitindo antecipar geadas, secas ou tempestades com dias de antecedência.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="beneficios" class="secao-cinza">
+        <div class="container">
+            <h2>Impacto no Campo</h2>
+            <div class="grid-2">
+                <div class="beneficio-item">
+                    <h4>Economia de Recursos</h4>
+                    <p>Otimização do uso de água na irrigação e aplicação de defensivos agrícolas no momento exato, evitando desperdícios causados por chuvas inesperadas.</p>
+                </div>
+                <div class="beneficio-item">
+                    <h4>Segurança contra Quebras de Safra</h4>
+                    <p>Planejamento assertivo da janela de plantio e colheita baseado em previsões de longo prazo extremamente confiáveis.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="simulador" class="secao-branca">
+        <div class="container max-w-md">
+            <h2>Simulador de Previsão por IA</h2>
+            <p class="text-center">Selecione as condições atuais da sua região para ver a IA gerar uma recomendação agrícola.</p>
+            
+            <div class="formulario-ia">
+                <div class="campo">
+                    <label for="regiao">Região do Paraná:</label>
+                    <select id="regiao">
+                        <option value="norte">Norte (Ex: Londrina)</option>
+                        <option value="sul">Sul (Ex: Palmas)</option>
+                        <option value="oeste">Oeste (Ex: Cascavel)</option>
+                        <option value="leste">Leste/Litoral (Ex: Paranaguá)</option>
+                    </select>
+                </div>
+
+                <div class="campo">
+                    <label for="sensor">Fator Crítico Detectado pelos Sensores:</label>
+                    <select id="sensor">
+                        <option value="seca">Alta Temperatura e Baixa Umidade do Solo</option>
+                        <option value="chuva">Frente Fria Estacionária se Aproximando</option>
+                        <option value="geada">Queda Abrupta de Temperatura Noturna</option>
+                    </select>
+                </div>
+
+                <button id="btn-analisar" class="btn-ia">Iniciar Análise do Algoritmo</button>
+            </div>
+
+            <div id="resultado-ia" class="resultado hidden">
+                <h3><span class="Icon">🤖</span> Diagnóstico do Modelo Preditivo</h3>
+                <div id="loading" class="hidden">Processando dados de satélite...</div>
+                <p id="output-texto"></p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container text-center">
+            <p>&copy; 2026 Projeto Agrinho - Tecnologia e Sustentabilidade no Campo.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
